@@ -3,6 +3,8 @@ import _ from 'lodash';
 
 import Song from './components/Song'
 
+import css from './css/main.css'
+
 class App extends React.Component {
   constructor(props) {
     super(props);
