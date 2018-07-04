@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Song = (props) => {
   return(
-    <div className="song-container" id={"song_" + props.id}>
+    <div className="song-container">
       <h2 className="song-title">{props.songName}</h2>
       <p className="song-length">Length: {props.songLength}</p>
       <p className="song-date">Year: {props.songYear}</p>

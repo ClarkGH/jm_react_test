@@ -17,20 +17,24 @@ class App extends React.Component {
   handleChange(event){
     this.setState({
       selectedSortOption: event.target.value,
-      renderedSongs: _.sortBy(this.props.songs, [(song) => { return song[event.target.value] }])
+      renderedSongs: _.sortBy(
+        this.props.songs, 
+        [(song) => { 
+          return song[event.target.value] }
+        ]),
     })
   }
   
   render() {
     return (
       <div className="container">
-        <div>
-          Sort by <select selectedSortOption={this.state.selectedSortOption} onChange={this.handleChange}>
-          <option value="length">Song Length</option>
-          <option selected value="year">Song Year</option>
-          <option value="name">Song Name</option>
+        <form>
+          Sort by <select value={this.state.selectedSortOption} onChange={this.handleChange}>
+            <option value="name">Song Name</option>
+            <option value="length">Song Length</option>
+            <option selected value="year">Song Year</option>
           </select>
-        </div>
+        </form>
         
         {this.state.renderedSongs.map(
           (song) => {
