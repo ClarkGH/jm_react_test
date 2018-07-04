@@ -2,8 +2,14 @@ import React from 'react';
 
 import Song from './components/Song'
 
-const App = () => {
-  return (<Song songName="Bananas are Crazy" songLength={122} songYear={1922} />);
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+  
+  render() {
+    return (<Song songName={this.props.data[0].name} songLength={this.props.data[0].length} songYear={this.props.data[0].year} />);
+  }
 }
 
 export default App;

@@ -2,12 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './App/App';
-import Songs from './json/songs'
-
-// TODO: remove logs
-console.log(Songs);
+import songs from './json/songs'
 
 ReactDOM.render(
-  <App />,
+  <App data={songs} />,
   document.getElementById('root'),
-);
+);   
