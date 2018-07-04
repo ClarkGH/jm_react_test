@@ -29,7 +29,7 @@ class App extends React.Component {
     return (
       <div className="container">
         <form>
-          Sort by <select value={this.state.selectedSortOption} onChange={this.handleChange}>
+          Sort by <select value={this.state.selectedSortOption} onChange={ this.handleChange }>
             <option value="name">Song Name</option>
             <option value="length">Song Length</option>
             <option selected value="year">Song Year</option>
@@ -40,9 +40,9 @@ class App extends React.Component {
           (song) => {
             return (
               <Song 
-                songName={song.name}
-                songLength={Math.floor(song.length/60) + 'm' + song.length%60 + 's'}
-                songYear={song.year} 
+                songName={ song.name }
+                songLength={ Math.floor(song.length/60) + 'm' + song.length%60 + 's' }
+                songYear={ song.year } 
               />
             );
           }
