@@ -1,13 +1,9 @@
 import React from 'react';
 
-class App extends React.Component {
-  constructor (props) {
-    super (props);
-  }
+import Song from './components/Song'
 
-  render () {
-    return (<h1> Hello World.</h1>);
-  }
+const App = () => {
+  return (<Song songName="Bananas are Crazy" songLength={122} songYear={1922} />);
 }
 
 export default App;

@@ -7,9 +7,9 @@
 4. After running, visit http://localhost:8080/
 
 ## The stack
-The React, Webpack, Babel, and Node configuration came from [my own boilerplate.](https://github.com/ClarkGH/react-practice/tree/master/boilerplate)
+The React, Webpack, Babel, and Node configuration came from [my own node/react boilerplate.](https://github.com/ClarkGH/react-practice/tree/master/boilerplate)
 
-1. Static NPM server hosing a single page
+1. Static NPM server hosting a single static HTML file.
 2. React and ReactDOM for javascript/template
 3. CSS
 4. Webpack/Babel for cross-browser-compatibility
