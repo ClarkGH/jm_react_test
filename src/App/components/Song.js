@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Song = (props) => {
   return(
@@ -9,5 +10,11 @@ const Song = (props) => {
     </div>
   );
 }
+
+Song.propTypes = {
+  songName: PropTypes.string.isRequired,
+  songYear: PropTypes.number.isRequired,
+  songLength: PropTypes.number.isRequired,
+};
 
 export default Song;

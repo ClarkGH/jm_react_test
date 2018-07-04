@@ -5,6 +5,9 @@ import Song from './components/Song'
 class App extends React.Component {
   constructor(props) {
     super(props)
+    this.state = {
+      renderedSongs: '',
+    }
   }
   
   render() {
