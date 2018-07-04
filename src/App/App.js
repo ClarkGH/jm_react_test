@@ -15,7 +15,13 @@ class App extends React.Component {
       <div className="song-list">
         {this.state.renderedSongs.map(
           (song) => {
-            return (<Song songName={song.name} songLength={Math.floor(song.length/60) + 'm ' + song.length%60 + 's'} songYear={song.year} />);
+            return (
+              <Song 
+                songName={song.name}
+                songLength={Math.floor(song.length/60) + 'm' + song.length%60 + 's'}
+                songYear={song.year} 
+              />
+            );
           }
         )}
       </div>
