@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 
 import Song from './components/Song'
 
@@ -6,13 +7,31 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      renderedSongs: this.props.songs,
+      renderedSongs: _.sortBy(this.props.songs, [(song) => { return song.name }]),
+      selectedSortOption: 'name',
     };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event){
+    this.setState({
+      selectedSortOption: event.target.value,
+      renderedSongs: _.sortBy(this.props.songs, [(song) => { return song[event.target.value] }])
+    })
   }
   
   render() {
     return (
-      <div className="song-list">
+      <div className="container">
+        <div>
+          Sort by <select selectedSortOption={this.state.selectedSortOption} onChange={this.handleChange}>
+          <option value="length">Song Length</option>
+          <option selected value="year">Song Year</option>
+          <option value="name">Song Name</option>
+          </select>
+        </div>
+        
         {this.state.renderedSongs.map(
           (song) => {
             return (
