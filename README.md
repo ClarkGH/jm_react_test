@@ -13,3 +13,9 @@ The React, Webpack, Babel, and Node configuration came from [my own node/react b
 2. React and ReactDOM for javascript/template
 3. CSS-in-JS via css-loader
 4. Webpack/Babel for cross-browser-compatibility
+
+## The Code
+
+1. /dist contains the bundled javascript/styles and the main html file
+2. /server contains the simple node.js server code
+3. /src contains the pre-transpiles javascript as well as the CSS styles.
