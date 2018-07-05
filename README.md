@@ -18,4 +18,4 @@ The React, Webpack, Babel, and Node configuration came from [my own node/react b
 
 1. /dist contains the bundled javascript/styles and the main html file
 2. /server contains the simple node.js server code
-3. /src contains the pre-transpiles javascript as well as the CSS styles.
+3. /src contains the pre-transpiled javascript as well as the CSS styles.
