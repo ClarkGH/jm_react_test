@@ -1,3 +1,42 @@
 body {
-  background-color: blueviolet;
+  --app-black: #000;
+  --app-white: #FFF;
+  --app-grey: #9A9699;
+  text-align: center;
+}
+
+.dropdown {
+  background-color: var(--app-white);
+}
+
+.song {
+  border: var(--app-black) solid 2px;
+  width: 300px;
+  margin: 16px auto;
+  background-color: var(--app-grey);
+}
+
+.title {
+  background-color: var(--app-grey);
+  border-top: var(--app-black) 2px solid;
+  border-bottom: var(--app-black) 2px solid;  
+}
+
+@media only screen and (min-width:1024px){
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .song {
+    flex: 1 0 20%;
+    margin: 12px;
+  }
+}
+
+@media only screen and (min-width:1240px) {
+  .song {
+    margin: 20px;
+  }
 }
