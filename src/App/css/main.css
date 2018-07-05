@@ -2,22 +2,28 @@ body {
   --app-black: #000;
   --app-white: #FFF;
   --app-grey: #9A9699;
+  --app-red: #F00;
   text-align: center;
+  background-color: #DDD;
 }
 
 .dropdown {
   background-color: var(--app-white);
 }
 
-.song {
-  border: var(--app-black) solid 2px;
-  width: 300px;
-  margin: 16px auto;
+.song, .title {
+  box-shadow: var(--app-red) 0 0 8px;
   background-color: var(--app-grey);
 }
 
+.song {
+  border: var(--app-black) solid 2px;
+  border-radius: 20px;
+  width: 300px;
+  margin: 16px auto;
+}
+
 .title {
-  background-color: var(--app-grey);
   border-top: var(--app-black) 2px solid;
   border-bottom: var(--app-black) 2px solid;  
 }
