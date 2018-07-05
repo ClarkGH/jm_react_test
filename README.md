@@ -11,5 +11,5 @@ The React, Webpack, Babel, and Node configuration came from [my own node/react b
 
 1. Static NPM server hosting a single static HTML file.
 2. React and ReactDOM for javascript/template
-3. CSS
+3. CSS-in-JS via css-loader
 4. Webpack/Babel for cross-browser-compatibility
